@@ -1,0 +1,12 @@
+# Remove unnnessecary files from being included in the slug
+
+remove() {
+  if [ -r "$1" ]; then
+    rm -fr "$1"
+  fi
+}
+
+remove "$BUILD_DIR/Package.swift"
+remove "$BUILD_DIR/Package.resolved"
+remove "$BUILD_DIR/Sources"
+remove "$BUILD_DIR/Tests"

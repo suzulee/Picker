@@ -1,0 +1,3 @@
+cd $BUILD_DIR
+puts-step "Building Package"
+swift build $SWIFT_BUILD_FLAGS --configuration "$SWIFT_BUILD_CONFIGURATION" --build-path "$SWIFT_BUILD_PATH"
